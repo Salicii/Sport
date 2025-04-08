@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programme Prise de Masse</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #00ffae;
+    }
+    .jour {
+      margin-bottom: 40px;
+    }
+    .exo {
+      margin: 10px 0;
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    label {
+      display: flex;
+      align-items: center;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    button {
+      background-color: #00ffae;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #timerDisplay {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+    img {
+      max-width: 100%;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Programme Prise de Masse</h1>
+
+  <div class="jour">
+    <h2>Lundi - PUSH</h2>
+    <div class="exo">
+      <label><input type="checkbox"> Développé couché - 4x8-10</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2019/08/developpe-couche.gif" alt="Développé couché">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Développé incliné haltères - 3x10-12</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2000/06/developpe-incline-halteres-exercice-musculation.gif" alt="Développé incliné">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Élévations latérales - 4x12-15</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/02/elevation-laterale-machine.gif" alt="Élévations latérales">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Développé militaire - 3x10</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/02/developpe-epaules-halteres-debout.gif" alt="Développé militaire">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Dips lestés - 3x10-12</label>
+      <img src="https://fitness.fr/wp-content/uploads/2025/03/Triceps_Dips_Muscles-1-e1705053925584.webp" alt="Dips">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Extension triceps poulie - 3x12-15</label>
+      <img src="https://www.fitadium.com/conseils/wp-content/uploads/2020/07/02011301-Cable-Pushdown_Upper-Arms_720.gif" alt="Extension triceps poulie">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Gainage planche - 3x45 sec</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/05/planche-abdos.gif" alt="Gainage planche">
+    </div>
+  </div>
+
+  <div class="jour">
+    <h2>Mercredi - PULL</h2>
+    <div class="exo">
+      <label><input type="checkbox"> Tractions pronation - 4x8-10</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2021/08/chin-up-traction-supination.gif" alt="Tractions">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Rowing barre - 4x10-12</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2021/09/rowing-barre.gif" alt="Rowing barre">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Tirage horizontal poulie - 3x12</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/02/tirage-horizontal-poulie.gif" alt="Tirage horizontal">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Face pull - 3x12-15</label>
+      <img src="https://static.strengthlevel.com/images/exercises/face-pull/face-pull-800.jpg" alt="Face pull">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Curl biceps barre - 3x10-12</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/01/curl-au-pupitre-barre-ez-larry-scott.gif" alt="Curl barre">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Curl incliné - 3x12-15</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2021/10/curl-haltere-incline.gif" alt="Curl incliné">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Crunch poulie - 3x20</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2000/06/crunch-poulie-haute-exercice-musculation.gif" alt="Crunch poulie">
+    </div>
+  </div>
+
+  <div class="jour">
+    <h2>Vendredi - LEGS</h2>
+    <div class="exo">
+      <label><input type="checkbox"> Squat ou presse - 4x8-10</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2000/06/presse-a-cuisse-exercice-musculation.gif" alt="Squat ou presse">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Soulevé de terre jambes tendues - 3x10-12</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/04/souleve-de-terre-jambes-tendues.gif" alt="Soulevé jambes tendues">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Fentes marchées - 3x12/jambe</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2000/06/fentes-avant-exercice-musculation.gif" alt="Fentes">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Leg curl - 3x12-15</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2021/10/leg-curl-decline-haltere.gif" alt="Leg curl">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Mollets - 4x15-20</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2021/10/extension-mollets-sur-marche.gif" alt="Mollets">
+    </div>
+    <div class="exo">
+      <label><input type="checkbox"> Gainage latéral - 3x45 sec</label>
+      <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/01/planche-laterale-obliques.gif" alt="Gainage latéral">
+    </div>
+  </div>
+
+  <button onclick="startTimer(90)">Démarrer chrono (90s)</button>
+  <div id="timerDisplay"></div>
+
+  <script>
+    let timer;
+    function startTimer(duration) {
+      let time = duration;
+      clearInterval(timer);
+      timer = setInterval(() => {
+        const minutes = Math.floor(time / 60);
+        const seconds = time % 60;
+        document.getElementById("timerDisplay").textContent = `${minutes}m ${seconds}s`;
+        if (--time < 0) clearInterval(timer);
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
