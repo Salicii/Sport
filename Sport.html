@@ -30,17 +30,30 @@
     input[type="checkbox"] {
       margin-right: 10px;
     }
-    button {
+    .floating-timer {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #222;
+      border: 2px solid #00ffae;
+      padding: 15px;
+      border-radius: 10px;
+      z-index: 1000;
+      box-shadow: 0 0 10px #00ffae;
+    }
+    .floating-timer button {
       background-color: #00ffae;
       border: none;
       padding: 10px;
-      margin-top: 10px;
       border-radius: 5px;
       cursor: pointer;
+      color: #111;
+      font-weight: bold;
     }
-    #timerDisplay {
-      font-size: 24px;
+    .floating-timer #timerDisplay {
+      font-size: 20px;
       margin-top: 10px;
+      text-align: center;
     }
     img {
       max-width: 100%;
@@ -143,9 +156,10 @@
       <img src="https://www.docteur-fitness.com/wp-content/uploads/2022/01/planche-laterale-obliques.gif" alt="Gainage latéral">
     </div>
   </div>
-
-  <button onclick="startTimer(90)">Démarrer chrono (90s)</button>
-  <div id="timerDisplay"></div>
+  <div class="floating-timer">
+    <button onclick="startTimer(90)">⏱️ Démarrer 90s</button>
+    <div id="timerDisplay">0m 00s</div>
+  </div>
 
   <script>
     let timer;
